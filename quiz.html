@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+    body{display: flex; background-color: #e9e9e9; justify-content: center; }
+    div.contents{display: flex; flex-direction: column; justify-content: center; align-content: center; width: 840px;}
+    h1.title{display: flex; flex-direction: row; justify-content: center; padding: 15px; margin-bottom: 4px; background-color: white; font-size: larger;}
+    div.nav{display: flex; flex-direction: row; align-items: center; height: 35px; margin-bottom: 10px;  background-color: white;text-decoration-line: none;}
+    ul{list-style: none;}
+    li{float: left; }
+    a{padding-right: 30px; text-decoration: none; color: black; font-weight: 600;}
+    div.main_quiz{display: flex; flex-direction: column; align-items: center; min-height: 70vh; padding: 50px; background-color: white;}
+    
+    p#intro1{display: flex; text-align: center; font-size: 30px;}
+    p#intro2{display: flex; text-align: center; margin-bottom: 50px;}
+ 
+    input.input_text{padding: 5px; width: 300px;}
+
+    div.quiz_container{display: flex; flex-direction: column; width: 550px; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid gainsboro;}
+    div.option{margin-top: 20px; margin-bottom: 20px;}
+    div.answer_container{display: none;}
+    input#real_answer{float: right; padding: 5px; background-color: royalblue; border: none; color: white;}
+    input#real_answer:focus~ div.answer_container{display: block; padding-top: 10px; padding-bottom: 10px; padding-left: 8px; background-color: whitesmoke;}
+    p.answer_is{color: royalblue;}
+   
+    
+
+  </style>
+  <title>나만의 웹페이지</title>
+  <meta charset="utf-8">
+  
+</head>
+<body>
+  <div class="contents">
+
+  <h1 class="title">나만의 웹페이지</h1>
+  <div class="nav">
+    <ul>
+      <li><a href="aboutMe.html">About Me</a></li>
+      <li><a href="aboutLike.html">About Like</a></li>
+      <li><a href="quiz_example.html">Quiz</a></li>
+    </ul>
+  </div>
+  <div class="main_quiz">
+    
+    <p id="intro1"><strong>Quiz!</strong> </p>
+    <p id="intro2"><strong>About Me 와 About Like 페이지에 있는 내용들을 가지고 퀴즈를 맞춰보자!!</strong></p>
+
+    
+
+    <!-- 아래의 quiz_container를 생각한 질문의 개수만큼 복붙하여 빈칸을 채워 문제를 만들어봅시다! -->
+
+    <div class="quiz_container">
+      <div class="question">
+        <p>월드컵 <strong>통산</strong> 통산 최다골</p>
+       
+      </div>
+      <div class="option">
+        <label><input type="radio" name="radio">게르트 뮐러</label>
+        <label><input type="radio" name="radio">펠레</label>
+        <label><input type="radio" name="radio">클로제</label>
+        
+      </div>
+      <div class="answer">
+        <input type="button" value="정답 확인" id="real_answer">
+        
+        <div class="answer_container">
+          <p class="answer_is">정답은 바로!!</p>
+          <p> 클로제</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="quiz_container">
+      <div class="question">
+    <p>현재 <strong>호날두</strong> 가있는 클럽은 </p>
+
+  </div>
+  <div class="option">
+    <label><input type="radio" name="radio">발베이크</label>
+    <label><input type="radio" name="radio">아라흐바인</label>
+    <label><input type="radio" name="radio">알 나스르</label>
+    
+  </div>
+  <div class="answer">
+    <input type="button" value="정답 확인" id="real_answer">
+    
+    <div class="answer_container">
+      <p class="answer_is">정답은 바로!!</p>
+      <p> 알 나스르</p>
+    
+    </div>
+  </div>
+</div>
+      <div class="quiz_container">
+        <div class="question">
+      <p>현재  <strong>파리생제르망</strong> 감독은 </p>
+          
+        </div>
+        <div class="option">
+          <label><input type="radio" name="radio">투헬</label>
+          <label><input type="radio" name="radio">포체티노</label>
+          <label><input type="radio" name="radio">갈티</label>
+          
+        </div>
+        <div class="answer">
+          <input type="button" value="정답 확인" id="real_answer">
+          <div class="answer_container">
+            
+            <p class="answer_is">정답은 바로!!</p>
+            <p> 갈티</p>
+        </div>
+  </div> 
+</body>
